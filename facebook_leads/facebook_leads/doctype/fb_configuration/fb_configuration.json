@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-02 17:04:12.418852",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "verify_token",
+  "has_custom_fields",
+  "company",
+  "lead_owner",
+  "column_break_9f3a",
+  "access_token",
+  "has_logs",
+  "section_break_aa1i",
+  "reference"
+ ],
+ "fields": [
+  {
+   "fieldname": "verify_token",
+   "fieldtype": "Data",
+   "label": "Verify Token"
+  },
+  {
+   "fieldname": "column_break_9f3a",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "has_custom_fields",
+   "fieldtype": "Check",
+   "label": "Has Custom Fields"
+  },
+  {
+   "fieldname": "access_token",
+   "fieldtype": "Small Text",
+   "label": "Access Token (Long Living)"
+  },
+  {
+   "default": "0",
+   "description": "Maintains logs in Error Log list",
+   "fieldname": "has_logs",
+   "fieldtype": "Check",
+   "label": "Need Logs?"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "fieldname": "section_break_aa1i",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "HTML",
+   "label": "Reference",
+   "options": "<h4>Reference</h4>\n<ul><li>Call Back URL : <span style=\"color: royalblue;\">/api/method/facebook_leads.facebook_leads.facebook_webhook.handleFaceBookWebhook</span></li>\n<li>Make sure to extend the User Access Token Expiry to Never - Using Access Token Debugger Tool in FaceBook.</li></ul>"
+  },
+  {
+   "fieldname": "lead_owner",
+   "fieldtype": "Data",
+   "label": "Lead Owner"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-12-12 11:34:12.890816",
+ "modified_by": "Administrator",
+ "module": "Facebook Leads",
+ "name": "FB Configuration",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
